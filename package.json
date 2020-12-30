@@ -1,0 +1,25 @@
+{
+  "name": "api-with-postman",
+  "version": "1.0.0",
+  "description": "api test with postman and cypress",
+  "main": "index.js",
+  "author": "Satish <satishchilkaka8@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.2.0",
+    "cypress": "^6.2.0",
+    "express": "^4.17.1",
+    "joi": "^17.3.0",
+    "newman": "^5.2.1",
+    "nock": "^13.0.5"
+  },
+  "scripts": {
+    "build": "nodemon app/index.js",
+    "test": "yarn cypress run --spec cypress/integration/nav.spec.js --env userName=$userName, pin=$pin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Satishchilkaka/apitestcypresspostman.git"
+  }
+}
