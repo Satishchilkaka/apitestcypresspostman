@@ -1,0 +1,4 @@
+node_modules
+cypress.env.json
+postman/test.postman_collection
+.gitattributes
